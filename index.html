@@ -112,7 +112,9 @@
 
           /* Loop through each pixel Red, Green, Blue, Alpha */
           for (var i = 0; i < data.length; i += 4) {
-
+          /* Removing the red and the green, setting the values to 0 so only the blue remains */
+          data[i] = 0; //red
+          data[i + 1] = 0; //green
           }
           
         } // end of img.onload
